@@ -1,0 +1,381 @@
+<html>
+  <head>
+     <title>Home | Malaysian Wildlife</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel = "icon" href ="image/icon.PNG" type = "image/x-icon">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<style type="text/css">
+	#title {
+		text-align: center;
+		padding: 20px;
+		margin: 0;
+		background-color: grey;
+	}
+
+	#title-1 {
+		text-align: center;
+		padding: 20px;
+		margin: 90px;
+	}
+
+	a:hover {
+		color: #FFBE32;
+	}
+
+  	/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+  margin-left: 100px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 10 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+</style>
+  </head>
+  <body id="myPage">
+     
+      <!-- Sidebar on click -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="index.html" class="w3-bar-item w3-button">Home</a>
+  <a href="about us.html" class="w3-bar-item w3-button">About us</a>
+  <a href="services.html" class="w3-bar-item w3-button">Services</a>
+  <a href="projects.html" class="w3-bar-item w3-button">Projects</a>
+  <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+</nav>
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="index.html" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Home</a>
+  <a href="about us.html" class="w3-bar-item w3-button w3-hide-small">About Us</a>
+   <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">Services <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="forest.html" class="w3-bar-item w3-button">Forest</a>
+      <a href="freshwater.html" class="w3-bar-item w3-button">Freshwater</a>
+      <a href="wildlife.html" class="w3-bar-item w3-button">Wildlife</a>
+	  <a href="marine.html" class="w3-bar-item w3-button">Marine</a>
+    </div>
+  </div>
+  <a href="projects.html" class="w3-bar-item w3-button w3-hide-small">Projects</a>
+  <a href="contact.html" class="w3-bar-item w3-button w3-hide-small">Contact</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">Help us <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="volunteering.html" class="w3-bar-item w3-button">Volunteering</a>
+      <a href="donation.html" class="w3-bar-item w3-button">Donation</a>
+      <a href="adoptwildlife.html" class="w3-bar-item w3-button">Adopt Wildlife</a>
+    </div>
+  </div>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
+ </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="index.html" class="w3-bar-item w3-button">Home</a>
+  <a href="about us.html" class="w3-bar-item w3-button">About us</a>
+  <a href="services.html" class="w3-bar-item w3-button">Services</a>
+  <a href="projects.html" class="w3-bar-item w3-button">Projects</a>
+  <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+  </div>
+</div>
+
+
+
+<!-- Image Header -->
+	<div class="w3-content" style="max-width:1360px;;min-height:350px;max-height: 650px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-left-align">
+    <img src="https://images.pexels.com/photos/3109734/pexels-photo-3109734.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="width:100%; height: 95%">
+    <div class="w3-display-left w3-container w3-text-white w3-padding">
+      <h2 style=" padding-left: 60px">Giraffe population is at<br>risk in South Africa</h2>
+      <button class="w3-button w3-ripple w3-border" style="margin-left: 110px">LEARN MORE</button>
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-left-align w3-grayscale">
+    <img src="https://images.pexels.com/photos/1302423/pexels-photo-1302423.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="width:100%; height: 95%">
+    <div class="w3-display-right w3-container w3-text-white w3-padding">
+      <h2 style=" padding-right: 60px">Loss of habitat and poaching<br>has resulted in the<br>endangerment of Grevy's<br>zebras</h2>
+      <button class="w3-button w3-ripple w3-border" style="margin-left: 110px">LEARN MORE</button>
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-left-align w3-grayscale">
+    <img src="https://images.pexels.com/photos/1817048/pexels-photo-1817048.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="width:100%; height: 95%">
+    <div class="w3-display-bottomleft w3-container w3-text-white w3-padding">
+      <h2 style=" padding-left: 70px; padding-top: 60px">Turtle habitats and population<br>are decreasing over the years</h2> 
+    </div>
+  </div>
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+
+  <h3 id="title">Malaysian Wildlife pledges to protect all habitats from going extinct</h3>
+
+  <!-- Team Container -->
+<div class="w3-container w3-padding-32 w3-center" id="team">
+<h2>PROJECTS & ACTIVITIES</h2>
+<br><br><br>
+
+<div class="w3-content"><br>
+
+<div class="w3-quarter">
+  <img src="https://images.pexels.com/photos/932638/pexels-photo-932638.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Ocean" style="width:55%; height: 20%" class="w3-circle w3-hover-opacity">
+  <h3>Ocean</h3>
+</div>
+
+<div class="w3-quarter">
+  <img src="https://images.pexels.com/photos/1563604/pexels-photo-1563604.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Forest" style="width:55%; height: 20%" class="w3-circle w3-hover-opacity">
+  <h3>Forest</h3>
+</div>
+
+<div class="w3-quarter">
+  <img src="https://images.pexels.com/photos/2666806/pexels-photo-2666806.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Mangrove" style="width:55%; height: 20%" class="w3-circle w3-hover-opacity">
+  <h3>Mangrove</h3>
+</div>
+
+<div class="w3-quarter">
+  <img src="https://images.pexels.com/photos/3854025/pexels-photo-3854025.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Coral Reef" style="width:55%; height: 20%" class="w3-circle w3-hover-opacity">
+  <h3>Coral Reef</h3>
+</div>
+
+<div class="w3-quarter">
+  <img src="https://images.pexels.com/photos/4542636/pexels-photo-4542636.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Orangutan" style="width:55%; height: 20%" class="w3-circle w3-hover-opacity">
+  <h3>Orangutan</h3>
+</div>
+
+<div class="w3-quarter">
+  <img src="https://images.pexels.com/photos/1661535/pexels-photo-1661535.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Panda" style="width:55%; height: 20%" class="w3-circle w3-hover-opacity">
+  <h3>Panda</h3>
+</div>
+
+<div class="w3-quarter">
+  <img src="https://images.pexels.com/photos/3661926/pexels-photo-3661926.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Turtle" style="width:55%; height: 20%" class="w3-circle w3-hover-opacity">
+  <h3>Turtle</h3>
+</div>
+
+<div class="w3-quarter">
+  <img src="https://images.pexels.com/photos/572861/pexels-photo-572861.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Tiger" style="width:55%; height: 20%" class="w3-circle w3-hover-opacity">
+  <h3>Tiger</h3>
+</div>
+
+</div>
+</div>
+
+
+<!-- Image display 1 -->
+<div class="w3-display-container" style="max-width:1360px;;min-height:350px;max-height: 650px">
+		<img src="image/volunteer.JPEG" alt="volunteer" style="width:100%; height: 95%">
+		<div class="w3-display-topmiddle w3-center w3-text-white w3-sans-serif w3-wide">
+      <h2 style="padding-top: 80px; font-size: 50px"><B>VOLUNTARY ACT</B></h2> 
+      <p style="padding-top: 20px; font-size: 1.3rem">Participate in this voluntary program amongst the youths</p>
+      <button class="w3-button w3-ripple w3-border">LEARN MORE</button>
+    </div>
+</div>
+
+
+<!-- Card display -->
+<div class="w3-container w3-padding-32">
+
+<div class="row">
+
+  <div class="column">
+    <div class="w3-card-4" style=" width: 80%">
+  <img src="image/student.jpg" alt="Student" style=" width: 250px; height: 250px">
+    <h4 style="text-align: center; font-size: 1.5em"><b>STUDENTS</b></h4>
+    <p style="text-align: center; padding: 5px">Our organization is currently open to internships in  Orangutan Forest Conservation Programme and Marine Conservation Programme</p>
+     <button style="margin-bottom: 20px; margin-left: 55px" class="w3-button w3-ripple w3-border">LEARN MORE</button>
+</div>
+  </div>
+
+  <div class="column">
+    <div class="w3-card-4" style=" width: 80%">
+  <img src="image/job-opportunity.jpg" alt="Student" style=" width: 250px; height: 250px">
+    <h4 style="text-align: center; font-size: 1.5em"><b>JOBS OPPORTUNITY</b></h4>
+    <p style="text-align: center; padding: 5px">The department in marketing is in need for vacancies for Marketing Assistant position. Sends us your resume and we will contact you via e-mail</p>
+     <button style="margin-bottom: 20px; margin-left: 55px" class="w3-button w3-ripple w3-border">LEARN MORE</button>
+</div>
+  </div>
+  
+  <div class="column">
+    <div class="w3-card-4" style=" width: 80%">
+  <img src="image/partnership.jpg" alt="Student" style=" width: 250px; height: 250px">
+    <h4 style="text-align: center; font-size: 1.5em"><b>PARTNERSHIP</b></h4>
+    <p style="text-align: center; padding: 5px">Help us in achieving our ultimate goals in helping wildlife. Form a partnership with us and receive numerous benefits inline with helping wildlife across Malaysia</p>
+     <button style="margin-bottom: 20px; margin-left: 55px" class="w3-button w3-ripple w3-border">LEARN MORE</button>
+</div>
+  </div>
+	</div>
+</div>
+
+<!-- Image display 2 -->
+<div class="w3-display-container" style="max-width:1360px;;min-height:350px;max-height: 650px">
+		<img src="image/marine-life.jpeg" alt="marine life" style="width:100%; height: 65%">
+		<div class="w3-display-topmiddle w3-center w3-text-white w3-sans-serif w3-wide"></div>
+</div>
+
+<div class="w3-container">
+	<div id="title-1">
+<h2 style="font-family: Georgia"><b>HELP US TO SAVE HABITATS</b></h2>
+<p style="text-align: center; padding: 0px 180px 0px 180px">Every living thing in this world needed each other to survive. Humans need animals, animals need humans, plants need animals. Basically all living things depend on each other. The Malaysian Wildlife trying to undo any damaged done by human throughout the Malaysia as well as internationally. Our future generation would be able to see and learn all about the various wildlife and species throughout the world.</p>
+<br>
+<button class="w3-button w3-ripple w3-red">DONATE NOW</button>
+  
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="flex-rw">
+  
+  <ul class="footer-list-top">
+    <li>
+      <h4 class="footer-list-header">About Malaysian Wildlife</h4></li>
+    <li><a href='about us.html' class="generic-anchor footer-list-anchor" itemprop="significantLink">GET TO KNOW US</a></li>
+    <li><a href='forest.html' class="generic-anchor footer-list-anchor" itemprop="significantLink">ACTIVITIES & EVENTS</a></li>
+    <li><a href='volunteering.html' class="generic-anchor footer-list-anchor" itemprop="significantLink">VOLUNTEERS</a></li>
+
+    <li><a href='/job-openings.html' itemprop="significantLink" class="generic-anchor footer-list-anchor">JOB OPENINGS</a></li>
+
+    <li><a href='/shop/about-show-schedule' class="generic-anchor footer-list-anchor" itemprop="significantLink">INTERNSHIPS</a></li>
+  </ul>
+
+  <ul class="footer-list-top">
+    <li>
+      <h4 class="footer-list-header">HELP US</h4></li>
+    <li><a href='volunteering.html' class="generic-anchor footer-list-anchor">BECOME A VOLUNTEER</a></li>
+    <li><a href='donation.html' class="generic-anchor footer-list-anchor">DONATE TO OUR CHARITY</a></li>
+    <li><a href='adoptwildlife.html' class="generic-anchor footer-list-anchor">ADOPT A WILDLIFE</a></li>
+    <li><a href='#' class="generic-anchor footer-list-anchor">CORPORATE PARTNERSHIP</a></li>
+  </ul>
+
+  <ul class="footer-list-top">
+    <li id='help'>
+      <h4 class="footer-list-header">MORE INFORMATION</h4></li>
+    <li><a href='contact.html' class="generic-anchor footer-list-anchor" itemprop="significantLink">CONTACT</a></li>
+    <li><a href='#' class="generic-anchor footer-list-anchor" itemprop="significantLink">FAQ</a></li>
+    <li id='find-a-store'><a href='#' class="generic-anchor footer-list-anchor" itemprop="significantLink">LOCATION</a></li>
+    <li id='user-registration'><a href='#' class="generic-anchor footer-list-anchor" itemprop="significantLink">PRIVACY POLICY STATEMENT</a></li>
+    <li id='order-tracking'><a href='#' itemprop="significantLink" class="generic-anchor footer-list-anchor">USING SITE CONTENT</a></li>
+  </ul>
+  <section class="footer-social-section flex-rw">
+      
+      <span class="footer-social-overlap footer-social-icons-wrapper">
+      <a href="https://www.pinterest.com/paviliongift/" class="generic-anchor" target="_blank" title="Pinterest" itemprop="significantLink"><i class="fa fa-pinterest"></i></a>
+      <a href="https://www.facebook.com/paviliongift" class="generic-anchor" target="_blank" title="Facebook" itemprop="significantLink"><i class="fa fa-facebook"></i></a>
+      <a href="https://twitter.com/PavilionGiftCo" class="generic-anchor" target="_blank" title="Twitter" itemprop="significantLink"><i class="fa fa-twitter"></i></a>
+      <a href="http://instagram.com/paviliongiftcompany" class="generic-anchor" target="_blank" title="Instagram" itemprop="significantLink"><i class="fa fa-instagram"></i></a>
+      <a href="https://www.youtube.com/channel/UCYgUODvd0qXbu_LkUWpTVEg" class="generic-anchor" target="_blank" title="Youtube" itemprop="significantLink"><i class="fa fa-youtube"></i></a>
+      <a href="https://plus.google.com/+Paviliongift/posts" class="generic-anchor" target="_blank" title="Google Plus" itemprop="significantLink"><i class="fa fa-google-plus"></i></a>
+      </span>
+  </section>
+
+  <section class="footer-bottom-section flex-rw">
+<div class="footer-bottom-wrapper">   
+<i class="fa fa-copyright" role="copyright">
+ 
+</i> 2020 Malaysian Wildlife in <address class="footer-address" role="company address">Kuala Lumpur, Malaysia</address><span class="footer-bottom-rights"> - All Rights Reserved - </span> <style type="text/css"> </style>
+    </div>
+    <div class="footer-bottom-wrapper">
+    <a href="/terms-of-use.html" class="generic-anchor" rel="nofollow">Terms</a> | <a href="/privacy-policy.html" class="generic-anchor" rel="nofollow">Privacy</a>
+      </div>
+  </section>
+</footer>
+</footer>
+
+<script>
+// Script for side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// slideshow animation
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4500); // Change image every 2 seconds
+}
+
+// slideshow button
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+  </body>
+</html>

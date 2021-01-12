@@ -1,0 +1,301 @@
+<html>
+  <head>
+     <title>Volunteering | Malaysian Wildlife</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel = "icon" href ="image/icon.png" type = "image/x-icon">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<style type="text/css">
+	#title {
+		text-align: center;
+		padding: 20px;
+		margin: 0;
+		background-color: grey;
+	}
+
+
+	a:hover {
+		color: #FFBE32;
+	}
+
+</style>
+  </head>
+  <body id="myPage">
+     
+      <!-- Sidebar on click -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="index.html" class="w3-bar-item w3-button">Home</a>
+  <a href="about us.html" class="w3-bar-item w3-button">About us</a>
+  <a href="services.html" class="w3-bar-item w3-button">Services</a>
+  <a href="projects.html" class="w3-bar-item w3-button">Projects</a>
+  <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+</nav>
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home w3-margin-right"></i>Home</a>
+  <a href="about us.html" class="w3-bar-item w3-button w3-hide-small">About Us</a>
+   <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">Services <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="forest.html" class="w3-bar-item w3-button">Forest</a>
+      <a href="freshwater.html" class="w3-bar-item w3-button">Freshwater</a>
+      <a href="wildlife.html" class="w3-bar-item w3-button">Wildlife</a>
+	  <a href="marine.html" class="w3-bar-item w3-button">Marine</a>
+    </div>
+  </div>
+  <a href="projects.html" class="w3-bar-item w3-button w3-hide-small">Projects</a>
+  <a href="contact.html" class="w3-bar-item w3-button w3-hide-small">Contact</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button w3-teal" title="Notifications">Help us <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="volunteering.html" class="w3-bar-item w3-button w3-teal">Volunteering</a>
+      <a href="donation.html" class="w3-bar-item w3-button">Donation</a>
+      <a href="adoptwildlife.html" class="w3-bar-item w3-button">Adopt Wildlife</a>
+    </div>
+  </div>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
+ </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="index.html" class="w3-bar-item w3-button">Home</a>
+  <a href="about us.html" class="w3-bar-item w3-button">About us</a>
+  <a href="services.html" class="w3-bar-item w3-button">Services</a>
+  <a href="projects.html" class="w3-bar-item w3-button">Projects</a>
+  <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+  </div>
+</div>
+
+
+
+<!-- Image Header -->
+	<div class="w3-content" style="max-width:1360px;;min-height:350px;max-height: 650px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-left-align">
+    <img src="https://images.unsplash.com/photo-1507136575541-0cc31f7f4ea6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80" style="width:100%; height: 95%">
+    <div class="w3-display-right w3-container w3-text-black">
+      <h2 style=" padding-right: 50px">Population of orangutan has decreased by<br>more than 25% over the last decade</h2>
+    </div>
+  </div>
+  
+  <div class="mySlides w3-display-container w3-left-align">
+    <img src="https://images.unsplash.com/photo-1505496875-17a0c521864c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=765&q=80" style="width:100%; height: 95%">
+    <div class="w3-display-left w3-container w3-text-white w3-padding">
+      <h2 style=" padding-left: 50px">There are only 1684 pandas<br>living in the wild</h2>
+    </div>
+  </div>
+  
+  <div class="mySlides w3-display-container w3-left-align">
+    <img src="https://images.unsplash.com/photo-1503019173807-a3412d6e5fd1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1371&q=80" style="width:100%; height: 95%">
+    <div class="w3-display-left w3-container w3-text-white w3-padding">
+      <h2 style=" padding-left: 70px">Turtle species in Malaysia<br>are endangered</h2> 
+    </div>
+  </div>
+  
+  <div class="mySlides w3-display-container w3-left-align">
+    <img src="https://images.unsplash.com/photo-1508817628294-5a453fa0b8fb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" style="width:100%; height: 95%">
+    <div class="w3-display-right w3-container w3-text-white w3-padding">
+      <h2 style=" padding-right: 70px">Tigers in Malaysia are classified<br>as "Critically Endangered"</h2> 
+    </div>
+  </div>
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+
+  <h3 id="title">Come and volunteer in these exciting activities to help us make wildlife in Malaysia better!</h3>
+
+<br>
+
+<!-- Content -->
+  <div class="w3-container w3-center">
+	<div id="title-1">
+<h1 class="w3-text-teal"><b>VOLUNTEERING ACTIVITIES</b></h1>
+
+  </div>
+</div>
+
+<br>
+<br>
+
+  <div class="w3-row">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal"><b>ORANGUTAN</b></h1>
+      <p>Become a volunteer at the Matang Wildlife Center. Perform various activities such as husbandry, construction, organic farming and many more. Our beloved Borneo orangutans are an endangered species due to demand in illegal wildlife trade. Let's give these orangutans the life that they deserve!</p>
+    </div>
+    <div class="w3-third w3-container">
+       <img class="w3-border" src="https://images.unsplash.com/photo-1432836606614-05efc6b80bd4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80" alt="Tiger" style="height: 210px; width: 314px">
+    </div>
+  </div>
+
+<br>
+
+  <div class="w3-row">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal"><b>PANDA</b></h1>
+      <p>Spend the day with pandas and learn about the animals’ way of life first hand. You will have to get down and dirty and work along other volunteers on a variety of chores like cleaning panda’s cages, preparing meals and feeding the animals, planting bamboo trees, making supplies and more. You will also get to learn various amazing facts about pandas by attending classes and watching documentaries!</p>
+    </div>
+    <div class="w3-third w3-container">
+       <img class="w3-border" src="https://images.unsplash.com/photo-1540126034813-121bf29033d2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80" alt="panda" style="height: 210px; width: 314px">
+    </div>
+  </div>
+  
+<br>
+  
+    <div class="w3-row">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal"><b>TURTLE</b></h1>
+      <p>Join our team as we go to Terengganu and engage in activities such as nighttime beach patrols, egg collection and nest monitoring to help us stop the decreasing population of turtles and collect scientific data. Other than that, you can also spend your free time swimming at the beach.</p>
+    </div>
+    <div class="w3-third w3-container">
+       <img class="w3-border" src="https://images.unsplash.com/photo-1473794492299-053053984395?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="turtle" style="height: 210px; width: 314px">
+    </div>
+  </div>
+  
+<br>
+  
+  <div class="w3-row">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal"><b>TIGER</b></h1>
+      <p>Poachers are the main cause of the decrease in tigers' population in Malaysia. Take part in becoming an anti-poacher patrol team and record animal tracks such as footprints and scratch marks. You can also go jungle trekking, caving and meet the orang asli.</p>
+    </div>
+    <div class="w3-third w3-container">
+       <img class="w3-border" src="https://images.unsplash.com/photo-1557973254-3b9af1ee03aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="tiger" style="height: 210px; width: 314px">
+    </div>
+  </div>
+  
+<br>
+  
+
+
+<!-- Footer -->
+<footer class="flex-rw">
+  
+  <ul class="footer-list-top">
+    <li>
+      <h4 class="footer-list-header">About Malaysian Wildlife</h4></li>
+    <li><a href='about us.html' class="generic-anchor footer-list-anchor" itemprop="significantLink">GET TO KNOW US</a></li>
+    <li><a href='forest.html' class="generic-anchor footer-list-anchor" itemprop="significantLink">ACTIVITIES & EVENTS</a></li>
+    <li><a href='volunteering.html' class="generic-anchor footer-list-anchor" itemprop="significantLink">VOLUNTEERS</a></li>
+
+    <li><a href='/job-openings.html' itemprop="significantLink" class="generic-anchor footer-list-anchor">JOB OPENINGS</a></li>
+
+    <li><a href='/shop/about-show-schedule' class="generic-anchor footer-list-anchor" itemprop="significantLink">INTERNSHIPS</a></li>
+  </ul>
+
+  <ul class="footer-list-top">
+    <li>
+      <h4 class="footer-list-header">HELP US</h4></li>
+    <li><a href='volunteering.html' class="generic-anchor footer-list-anchor">BECOME A VOLUNTEER</a></li>
+    <li><a href='donation.html' class="generic-anchor footer-list-anchor">DONATE TO OUR CHARITY</a></li>
+    <li><a href='adoptwildlife.html' class="generic-anchor footer-list-anchor">ADOPT A WILDLIFE</a></li>
+    <li><a href='#' class="generic-anchor footer-list-anchor">CORPORATE PARTNERSHIP</a></li>
+  </ul>
+
+  <ul class="footer-list-top">
+    <li id='help'>
+      <h4 class="footer-list-header">MORE INFORMATION</h4></li>
+    <li><a href='contact.html' class="generic-anchor footer-list-anchor" itemprop="significantLink">CONTACT</a></li>
+    <li><a href='#' class="generic-anchor footer-list-anchor" itemprop="significantLink">FAQ</a></li>
+    <li id='find-a-store'><a href='#' class="generic-anchor footer-list-anchor" itemprop="significantLink">LOCATION</a></li>
+    <li id='user-registration'><a href='#' class="generic-anchor footer-list-anchor" itemprop="significantLink">PRIVACY POLICY STATEMENT</a></li>
+    <li id='order-tracking'><a href='#' itemprop="significantLink" class="generic-anchor footer-list-anchor">USING SITE CONTENT</a></li>
+  </ul>
+  <section class="footer-social-section flex-rw">
+      
+      <span class="footer-social-overlap footer-social-icons-wrapper">
+      <a href="https://www.pinterest.com/paviliongift/" class="generic-anchor" target="_blank" title="Pinterest" itemprop="significantLink"><i class="fa fa-pinterest"></i></a>
+      <a href="https://www.facebook.com/paviliongift" class="generic-anchor" target="_blank" title="Facebook" itemprop="significantLink"><i class="fa fa-facebook"></i></a>
+      <a href="https://twitter.com/PavilionGiftCo" class="generic-anchor" target="_blank" title="Twitter" itemprop="significantLink"><i class="fa fa-twitter"></i></a>
+      <a href="http://instagram.com/paviliongiftcompany" class="generic-anchor" target="_blank" title="Instagram" itemprop="significantLink"><i class="fa fa-instagram"></i></a>
+      <a href="https://www.youtube.com/channel/UCYgUODvd0qXbu_LkUWpTVEg" class="generic-anchor" target="_blank" title="Youtube" itemprop="significantLink"><i class="fa fa-youtube"></i></a>
+      <a href="https://plus.google.com/+Paviliongift/posts" class="generic-anchor" target="_blank" title="Google Plus" itemprop="significantLink"><i class="fa fa-google-plus"></i></a>
+      </span>
+  </section>
+
+  <section class="footer-bottom-section flex-rw">
+<div class="footer-bottom-wrapper">   
+<i class="fa fa-copyright" role="copyright">
+ 
+</i> 2020 Malaysian Wildlife in <address class="footer-address" role="company address">Kuala Lumpur, Malaysia</address><span class="footer-bottom-rights"> - All Rights Reserved - </span> <style type="text/css"> </style>
+    </div>
+    <div class="footer-bottom-wrapper">
+    <a href="/terms-of-use.html" class="generic-anchor" rel="nofollow">Terms</a> | <a href="/privacy-policy.html" class="generic-anchor" rel="nofollow">Privacy</a>
+      </div>
+  </section>
+</footer>
+</footer>
+
+
+
+<script>
+// Script for side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// slideshow animation
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4500); // Change image every 2 seconds
+}
+
+// slideshow button
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+  </body>
+</html>
